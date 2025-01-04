@@ -1,0 +1,30 @@
+package basicsyntax;
+
+public class DatatypesAndVariable {
+/* A public class is globally accessible and often used for defining key components in Java programs*/
+	public static void main(String[] args) {
+	/* The public static void main string args is mandatory for the JVM to locate and execute the program*/
+        
+
+		int num3 = 10; 
+                /*int is fundamental for performing efficient integer-based calculations in Java programs*/
+		double grade1 = 19.99;
+                /*Double is a versatile tool for handling real numbers with high precision, suitable for various applications from basic math to complex simulations*/
+		char section = 'A';
+                /*Char is a data type that stores individual characters, supports Unicode characters, and offers various character manipulation methods*/
+		String name = "Zandries"; 
+                /*String is a core class, indispensable for working with text and offering a vast array of utilities to manipulate and query text data*/
+		boolean isTall = true;
+                /*boolean is a fundamental type for logical decision-making and controlling the execution of code based on conditions*/
+		float grade = 95.55f;
+                /*Float is a suitable choice for memory storage and precision tolerance, especially in graphics, scientific calculations, or applications where absolute accuracy isn't crucial*/
+		System.out.println(num3);
+		System.out.println(grade1);
+		System.out.println(section);
+		System.out.println(name);
+		System.out.println(isTall);
+		System.out.println(grade);
+                /*System.out.println is a crucial Java output tool that facilitates user interaction and program execution by printing information*/
+	}
+
+}
