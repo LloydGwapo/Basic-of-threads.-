@@ -1,0 +1,36 @@
+package basicsyntax;
+
+public class Loop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// 1 For loop
+		  for (int i = 1; i <= 5; i++) {
+	            System.out.println(i);
+	            
+	   // 2 While loop
+	            int g = 1;
+	            
+	            while (g <= 5) {
+	                System.out.println(i);
+	                i++;
+		// 3 Do-while loop
+	                int f = 1;
+	                
+	                do {
+	                    System.out.println(i);
+	                    i++;
+	                } while (g <= 5);
+		// 4 enhanced for Loop (For-Each Loop)
+	                int[] numbers = {1, 2, 3, 4, 5};
+	                
+	              
+	                for (int num : numbers) {
+	                    System.out.println(num);
+	                    
+	            }
+		  }
+	}
+}
+}
