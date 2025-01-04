@@ -1,0 +1,23 @@
+package basicsyntax;
+
+import java.io.*;
+import java.net.*;
+
+public class NetworkingAndSockets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 try (Socket socket = new Socket("localhost", 1234)) {
+	            System.out.println("Connected to the server!");
+
+	            
+	            InputStream input = socket.getInputStream();
+	            BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+	            String message = reader.readLine();
+	            System.out.println("Message from server: " + message);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }	
+	}
