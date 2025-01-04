@@ -1,0 +1,19 @@
+package basicsyntax;
+
+public class Function {
+
+	// This method takes two integers as parameters and returns their sum
+    public int addNumbers(int num1, int num2) {
+        return num1 + num2; // Return the sum
+    }
+
+    public static void main(String[] args) {
+        Function example = new Function();
+
+        // Call the function with two numbers
+        int result = example.addNumbers(5, 10);
+
+        // Print the result
+        System.out.println("The sum is: " + result);
+    }
+}
