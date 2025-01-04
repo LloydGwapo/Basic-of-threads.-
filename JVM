@@ -1,0 +1,54 @@
+package basicsyntax;
+
+public class JVM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+        System.out.println("Step 1: Source Code -> Bytecode (Done by javac compiler)");
+
+        // Step 2: Class Loading
+        System.out.println("Step 2: Class Loading");
+        ClassLoader classLoader = JVM.class.getClassLoader();
+        System.out.println("ClassLoader used: " + classLoader);
+
+        // Step 3: Bytecode Verification
+        System.out.println("Step 3: Bytecode Verification");
+        System.out.println("Bytecode is verified by the JVM to ensure safety and security.");
+
+        // Step 4: Execution Engine (Interpreting & JIT Compilation)
+        System.out.println("Step 4: Execution Engine (Interpreting & JIT Compilation)");
+        executeBytecode();
+
+        // Step 5: Garbage Collection
+        System.out.println("Step 5: Garbage Collection");
+        simulateGarbageCollection();
+    }
+
+    // Simulating bytecode execution
+    public static void executeBytecode() {
+        System.out.println("Executing bytecode...");
+        int a = 10;
+        int b = 20;
+        int result = a + b;
+        System.out.println("Result of bytecode execution (10 + 20): " + result);
+    }
+
+    // Simulating garbage collection
+    public static void simulateGarbageCollection() {
+        System.out.println("Simulating garbage collection...");
+        Object obj = new Object(); 
+        obj = null; 
+        System.gc(); 
+        System.out.println("Garbage collection requested.");
+    }
+
+    // Overriding finalize (to show GC effect)
+  
+    protected void finalize() throws Throwable {
+        System.out.println("Garbage collector called.");
+
+	}
+
+}
