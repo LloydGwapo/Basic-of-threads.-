@@ -1,0 +1,32 @@
+package basicsyntax;
+
+public class Conditionals {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int age = 18;
+		
+		
+		if (age >= 18) {
+		    System.out.println("You have access");
+		} else {
+		    System.out.println("Access Denied");
+		    
+		    
+		    int age1 = 18;
+		    if (age1 >= 18) {
+		        System.out.println("You have access");
+		    } else if (age1 >= 13) {
+		        System.out.println("You need Parent Consent");
+		    } else if (age1 >= 4) {
+		        System.out.println("You are a kid");
+		    } else {
+		        System.out.println("Your are a baby wth");
+		    }
+		    
+		}
+	
+	}
+
+}
