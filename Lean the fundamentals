@@ -1,0 +1,60 @@
+package basicsyntax;
+
+public class learnthefundamentals {
+
+	public static int addNumbers(int a, int b) {
+        return a + b;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 // 1. Variables and Data Types
+		 int age = 18; 
+	        double height = 5.9; 
+	        char grade = 'A';
+	        boolean isJavaFun = false; 
+	        String name = ""; 
+
+	        System.out.println("Name: " + name);
+	        System.out.println("Age: " + age);
+	        System.out.println("Height: " + height);
+	        System.out.println("Grade: " + grade);
+	        System.out.println("Is learning Java fun? " + isJavaFun);
+
+	        // 2. Operators
+	        int sum = age + 5; 
+	        System.out.println("Age in 5 years: " + sum);
+
+	        boolean isAdult = age > 18; 
+	        System.out.println("Is adult: " + isAdult);
+
+	        // 3. Conditional Statement
+	        if (isAdult) {
+	            System.out.println(name + " is an adult.");
+	        } else {
+	            System.out.println(name + " is not an adult.");
+	        }
+
+	        // 4. Loops
+	        System.out.println("Counting from 1 to 5:");
+	        for (int i = 1; i <= 5; i++) {
+	            System.out.println(i);
+	        }
+
+	        // 5. Arrays
+	        int[] scores = {90, 85, 78, 92, 88};
+	        System.out.println("Scores: ");
+	        for (int score : scores) {
+	            System.out.print(score + " ");
+	        }
+	        System.out.println();
+
+	        // 6. Functions
+	        int result = addNumbers(10, 20);
+	        System.out.println("Sum of 10 and 20 is: " + result);
+	    }
+
+
+		
+}
