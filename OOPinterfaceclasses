@@ -1,0 +1,79 @@
+package basicsyntax;
+
+public class OOPinterfaceclasses {
+
+	public static void main(String[] args) {} {
+		// TODO Auto-generated method stub
+	
+		
+		interface Animal {
+		    void eat(); 
+		    void makeSound();  
+		}
+
+		
+		abstract class Mammal implements Animal {
+		    protected String name;
+
+		  
+		    public Mammal(String name) {
+		        this.name = name;
+		    }
+
+		    
+		    public void breathe() {
+		        System.out.println(name + " is breathing.");
+		    }
+		}
+
+		
+		class Dog extends Mammal {
+		    public Dog(String name) {
+		        super(name);
+		    }
+
+		    
+		    public void eat() {
+		        System.out.println(name + " is eating dog food.");
+		    }
+
+		   
+		    public void makeSound() {
+		        System.out.println(name + " says: Woof! Woof!");
+		    }
+		}
+
+	
+		class Cat extends Mammal {
+		    public Cat(String name) {
+		        super(name);
+		    }
+
+		   
+		    public void eat() {
+		        System.out.println(name + " is eating cat food.");
+		    }
+
+		 
+		    public void makeSound() {
+		        System.out.println(name + " says: Meow! Meow!");
+		    }
+		}
+
+		
+		public class OOPExample {
+		    public static void main(String[] args) {
+		        
+		        Mammal dog = new Dog("Buddy");
+		        Mammal cat = new Cat("Kitty");
+
+		       
+		        dog.breathe();
+		        dog.eat();
+		        dog.makeSound();
+
+		        cat.breathe();
+		        cat.eat();
+		        cat.makeSound();
+	}			
+}
