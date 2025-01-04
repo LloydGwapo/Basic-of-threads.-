@@ -1,0 +1,45 @@
+package basicsyntax;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class CollectionManagement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        System.out.println("ArrayList Example:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+      
+        HashMap<Integer, String> idToName = new HashMap<>();
+        idToName.put(1, "Alice");
+        idToName.put(2, "Bob");
+        idToName.put(3, "Charlie");
+
+        System.out.println("\nHashMap Example:");
+        for (Integer id : idToName.keySet()) {
+            System.out.println("ID: " + id + ", Name: " + idToName.get(id));
+        }
+
+        
+        HashSet<String> uniqueNames = new HashSet<>();
+        uniqueNames.add("Alice");
+        uniqueNames.add("Bob");
+        uniqueNames.add("Alice"); 
+
+        System.out.println("\nHashSet Example:");
+        for (String uniqueName : uniqueNames) {
+            System.out.println(uniqueName);
+        }
+    }
+}
